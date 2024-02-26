@@ -1,0 +1,268 @@
+*{
+    margin:0;
+    padding:0;
+}
+ .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('images/0101.gif');
+    background-position: center;
+    background-size:fill;
+    position: relative;
+ }
+nav{
+    display:flex;
+    padding:1% 6%;
+    justify-content:space-between;
+    align-items:center;
+}
+nav img{
+    width: 200px;
+    height: 150px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position:relative;
+
+}
+.nav-links ul li a{
+    color:white;
+    text-decoration: none;
+    font-size:13px;
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height: 2px;
+    background: green;
+    display:block;
+    margin:auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+    width:90%;
+    color:#fff;
+    position:absolute;
+    top:25%;
+    left:5%;
+    transform: tranlate(-50%,-50%);
+    text-align: center;
+
+}
+.text-box h1{
+    font-size: 62px;
+    color: darkgreen;
+}
+.text-box p{
+    margin:10px 0 40px;
+    font-size:20px;
+    color:gray;
+
+}
+
+.hero-btn{
+    border-color: black;
+    color:black;
+    display:inline-block;
+    text-decoration:none;
+    color:#68ac94;
+    border:1px solid #68ac94;
+    padding:12px 34px;
+    font-size:13px;
+    background:transparent;
+    position:relative;
+    cursor:pointer;
+}
+.hero-btn:hover{
+    border:1px solid darkgreen;
+    background:darkgreen;
+    transition:1s;
+}
+/*----- serices ----*/
+.services{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color:black;
+    font-size:20px;
+    font-weight: 400;
+    line-height:30px;
+    padding:10px;
+}
+.row{
+    margin-top:5%;
+    display:flex;
+    justify-content:space-between;
+}
+.course-col{
+    flex-basis:35%;
+    background: rgb(255, 245, 227);
+    border-radius: 10px;
+    margin-bottom: 10%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition:0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.save{
+    width:50%;
+    margin:auto;
+    text-align:center;
+    padding-top:1px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p1{
+    color:black;
+    font-size:20px;
+    font-weight: 600;
+    line-height:30px;
+    padding:100px;
+}
+
+.layer:hover{
+    background:rgba(green);
+}
+.cta{
+    margin:100px auto;
+    width: 80%;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('images/cod.jpg');
+    background-position:center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px;
+}
+.cta h1{
+    color:rgb(92, 172, 127);
+    margin-bottom:40px;
+    padding:0;
+    
+}
+.footer p2{
+    color:black;
+    font-size:12px;
+    font-weight: 60;
+    line-height:10px;
+    padding: 15px ;
+}
+
+/*-----about us-----*/
+
+.sub-header{
+    height:50vh;
+    width:100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('images/ab.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#68ac94;
+}
+.sub-header h1{
+    margin-top:100px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top:80px;
+    padding-bottom:50px; 
+}
+.about-col{
+    flex-basis: 48%;
+    padding:30px 2px;
+}
+.about-col img{
+    width:100%;
+    height: 100%;
+}
+.about-col h1{
+    padding:0 ;
+}
+.about-col p2{
+    padding:15px 0 25px;
+    font-size: 17px;
+}
+.comment-box{
+    border:1px solid #000000;
+    margin:50px 0;
+    padding:10px 20px;
+    width:35%;
+    height:50% ;
+}
+.comment-box h3{
+    text-align:left;
+
+}
+.comment-form input,.comment-form textarea{
+    width: 100%;
+    padding:10px;
+    margin:15px 0;
+    box-sizing: border-box;
+    outline:none;
+    background:rgb(255, 245, 227);
+    color: #000000;
+}
+
+.comment-form button{
+    margin:10px 0;
+    border-color: black;
+    color:black;
+
+}
+.contact-us{
+    width: 80%;
+    margin: 10px 10px;
+}
+
+
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 10%;
+}
+.contact-col div{
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-col div p{
+    padding:0;
+}
+.contact-col div h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border:1px solid black;
+}
